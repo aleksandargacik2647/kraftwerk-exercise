@@ -2,9 +2,10 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 var useref = require('gulp-useref');
-var uglify = require('gulp-uglify');
+// var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
-var cssnano = require('gulp-cssnano');
+// var cssnano = require('gulp-cssnano');
+var minify = require('gulp-minifier');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
@@ -41,13 +42,17 @@ gulp.task('watch', function() {
 // Optimization Tasks 
 // ------------------
 
-// Optimizing CSS and JavaScript 
+// Optimizing JavaScript and CSS 
 gulp.task('useref', function() {
 
   return gulp.src('app/*.html')
     .pipe(useref())
-    .pipe(gulpIf('app/js/*.js', uglify()))
-    .pipe(gulpIf('app/css/*.css', cssnano()))
+    .pipe(minify({
+      minify: true,
+      minifyHTML: false,
+      minifyJS: true,
+      minifyCSS: true
+    }))
     .pipe(gulp.dest('dist'));
 });
 
