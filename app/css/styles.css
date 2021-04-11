@@ -1,0 +1,207 @@
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.navbar {
+  background-color: #eb690a;
+  padding: 0.75rem 0;
+  box-shadow: 0 0 0.5rem 0 #000;
+  z-index: 99; }
+  .navbar .container {
+    justify-content: center; }
+  .navbar .logo img {
+    height: 24px; }
+
+h1.heading {
+  font-size: 34px;
+  font-weight: bold;
+  max-width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 0;
+  text-align: center; }
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: black; }
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: black; }
+
+p {
+  font-size: 16px;
+  color: #000; }
+  p a {
+    color: #eb690a;
+    text-decoration: none; }
+    p a:hover {
+      color: #eb690a;
+      text-decoration: underline; }
+
+.bg-gray {
+  background-color: #ecf1f5; }
+
+form .form-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000; }
+
+form .form-control::placeholder,
+form .form-select::placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  color: #acacac; }
+
+form .form-control:focus,
+form .form-select:focus {
+  box-shadow: 0 0 0 4px rgba(235, 105, 10, 0.25);
+  border: none; }
+
+form .form-check {
+  margin-left: 7px;
+  padding-right: 20px; }
+  form .form-check-input {
+    margin-right: 15px;
+    border: none;
+    width: 25px;
+    height: 25px; }
+    form .form-check-input[type="radio"] {
+      background-image: url(../images/radio.png); }
+    form .form-check-input:checked[type="radio"] {
+      background-image: url(../images/radio-checked.png); }
+    form .form-check-input[type="checkbox"] {
+      background-image: url(../images/checkbox.png); }
+    form .form-check-input:checked[type="checkbox"] {
+      background-image: url(../images/checkbox-checked.png); }
+    form .form-check-input:focus {
+      box-shadow: 0 0 0 4px rgba(235, 105, 10, 0.25);
+      border: none; }
+  form .form-check-label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    line-height: 35px; }
+    form .form-check-label a {
+      color: #eb690a;
+      text-decoration: none; }
+
+form textarea {
+  height: 93px; }
+
+.btn-primary {
+  background-image: linear-gradient(to right, #ae3700, #eb690a);
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  width: 220px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px; }
+  .btn-primary:focus {
+    box-shadow: 0 0 0 4px rgba(235, 105, 10, 0.25);
+    border: none; }
+
+ul {
+  list-style-image: url(../images/bullet.png); }
+
+.carousel {
+  z-index: 11; }
+  .carousel h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 50px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  .carousel .btn-primary {
+    margin-bottom: 80px; }
+  .carousel .carousel-control-prev-icon {
+    background-image: url(../images/silder_nav_left.png);
+    width: 40px;
+    height: 40px; }
+  .carousel .carousel-control-next-icon {
+    background-image: url(../images/silder_nav_right.png);
+    width: 40px;
+    height: 40px; }
+
+.footer {
+  background-color: #eb690a;
+  padding-bottom: 155px; }
+  .footer .copyright {
+    background-color: #ae3700;
+    padding: 13px 0;
+    font-size: 16px;
+    color: #ffffff; }
+
+@media screen and (min-width: 768px) {
+  .navbar .container {
+    justify-content: start; } }
+
+@media screen and (max-width: 1400px) {
+  .carousel .carousel-caption {
+    bottom: 5vw; }
+  .carousel h2 {
+    font-size: 50px;
+    margin-bottom: 50px; }
+  .carousel .btn-primary {
+    width: 160px;
+    font-size: 18px;
+    margin-bottom: 0;
+    height: 50px;
+    line-height: 50px; } }
+
+@media screen and (max-width: 1200px) {
+  .carousel .carousel-caption {
+    bottom: 4vw; }
+  .carousel h2 {
+    font-size: 44px;
+    margin-bottom: 44px; }
+  .carousel .btn-primary {
+    width: 160px;
+    font-size: 18px;
+    margin-bottom: 0;
+    height: 50px;
+    line-height: 50px; } }
+
+@media screen and (max-width: 992px) {
+  .carousel .carousel-caption {
+    bottom: 3vw; }
+  .carousel h2 {
+    font-size: 38px;
+    margin-bottom: 30px; }
+  .carousel .btn-primary {
+    width: 160px;
+    font-size: 18px;
+    margin-bottom: 0;
+    height: 40px;
+    line-height: 40px; } }
+
+@media screen and (max-width: 768px) {
+  .carousel .carousel-caption {
+    bottom: 1vw; }
+  .carousel h2 {
+    font-size: 24px;
+    margin-bottom: 24px; }
+  .carousel .btn-primary {
+    width: 160px;
+    font-size: 16px;
+    margin-bottom: 0;
+    height: 40px;
+    line-height: 40px; } }
+
+@media screen and (max-width: 480px) {
+  .carousel .carousel-caption {
+    bottom: 0; }
+  .carousel h2 {
+    font-size: 18px;
+    margin-bottom: 10px; }
+  .carousel .btn-primary {
+    width: 140px;
+    font-size: 14px;
+    margin-bottom: 0;
+    height: 30px;
+    line-height: 30px; } }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="25px" viewBox="0 0 26 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>radio_unchecked</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="25" height="25" rx="12.5"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="personal_data" transform="translate(-129.000000, -80.000000)">
+            <g id="Stacked-Group" transform="translate(20.000000, 80.000000)">
+                <g id="Group-3">
+                    <g id="radio/empty-copy-4" transform="translate(109.636719, 0.000000)">
+                        <g id="Rectangle-39">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#B5C3CF" stroke-width="1" x="0.5" y="0.5" width="24" height="24" rx="12"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
