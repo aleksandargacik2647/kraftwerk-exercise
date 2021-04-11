@@ -46,8 +46,8 @@ gulp.task('useref', function() {
 
   return gulp.src('app/*.html')
     .pipe(useref())
-    .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulpIf('*.css', cssnano()))
+    .pipe(gulpIf('app/js/*.js', uglify()))
+    .pipe(gulpIf('app/css/*.css', cssnano()))
     .pipe(gulp.dest('dist'));
 });
 
@@ -60,12 +60,6 @@ gulp.task('images', function() {
     })))
     .pipe(gulp.dest('dist/images'))
 });
-
-// Copying fonts 
-gulp.task('fonts', function() {
-  return gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
-})
 
 // Cleaning 
 gulp.task('clean', function() {
@@ -91,7 +85,7 @@ gulp.task('build', function(callback) {
   runSequence(
     'clean:dist',
     'sass',
-    ['useref', 'images', 'fonts'],
+    ['useref', 'images'],
     callback
   )
 })
